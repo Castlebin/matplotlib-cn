@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 install_requires = [
-    'torch',
+
 ]
 
 extras_require = {
@@ -14,7 +14,7 @@ setuptools.setup(
     # 包的分发名称，使用字母、数字、_、-
     name="matplotlib_cn",
     # 版本号, 版本号规范：https://www.python.org/dev/peps/pep-0440/
-    version="1.0.1",
+    version="1.0.3",
     # 作者名
     author="matplotlib_cn",
     # 作者邮箱
@@ -31,8 +31,8 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     # 关于包的其他元数据(metadata)
     classifiers=[
-        # 该软件包兼容性:Python 3.9
-        "Programming Language :: Python :: 3.9",
+        # 该软件包兼容性: Python 3.8
+        "Programming Language :: Python :: 3.8",
         # 许可证开源信息
         "License :: OSI Approved :: Apache Software License",
         # 与操作系统无关

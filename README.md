@@ -1,7 +1,5 @@
 # matplotlib_cn
 
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-
 ## Description
 
 `matplotlib_cn` is a Python package designed to simplify the use of Matplotlib for Chinese users. It provides localized documentation and examples to help users better understand and utilize Matplotlib for data visualization.
@@ -10,7 +8,8 @@
 
 - Simplified setup for Matplotlib in Chinese environments.
 - Localized examples and documentation.
-- Compatible with Python 3.9.
+- Compatible with Python 3.8.
+- Supports Google Colab and Jupyter Notebook!
 
 ## Installation
 

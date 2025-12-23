@@ -11,7 +11,7 @@ def enable_matplotlib_chinese(verbose=True):
 
     def log(msg):
         if verbose:
-            print(f"[matplotlib-cn] {msg}")
+            print(f"[matplotlib_cn] {msg}")
 
     # Locate SimHei.ttf in the same directory as this script
     font_path = os.path.join(os.path.dirname(__file__), "SimHei.ttf")
