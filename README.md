@@ -27,10 +27,16 @@ from matplotlib_cn import matplotlib_chinese
 
 matplotlib_chinese.enable_matplotlib_chinese()
 
+# or just
+matplotlib_chinese.plot_chinese()
+
 
 # example plot with Chinese characters
 import numpy as np
 import matplotlib.pyplot as plt
+
+from matplotlib_cn import matplotlib_chinese
+matplotlib_chinese.plot_chinese()
 
 x = np.linspace(-10, 10, 100)
 y = x
