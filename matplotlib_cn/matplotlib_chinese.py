@@ -28,3 +28,7 @@ def enable_matplotlib_chinese(verbose=True):
     rcParams["axes.unicode_minus"] = False
 
     log(f"matplotlib enabled with Chinese font: {font_name} ")
+
+# alias
+plot_chinese = enable_matplotlib_chinese
+
