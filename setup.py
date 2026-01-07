@@ -14,7 +14,7 @@ setuptools.setup(
     # 包的分发名称，使用字母、数字、_、-
     name="matplotlib_cn",
     # 版本号, 版本号规范：https://www.python.org/dev/peps/pep-0440/
-    version="1.0.4",
+    version="1.0.5",
     # 作者名
     author="matplotlib_cn",
     # 作者邮箱

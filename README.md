@@ -16,27 +16,25 @@
 You can install the package using `pip`:
 
 ```bash
-pip install -U matplotlib_cn
+pip install matplotlib_cn
 ```
 
 ## Usage
 Here is a simple example of how to use `matplotlib_cn`:
 
 ```python
-from matplotlib_cn import matplotlib_chinese
+from matplotlib_cn import matplotlib_util
 
-matplotlib_chinese.enable_matplotlib_chinese()
+matplotlib_util.enable_chinese()
+```
 
-# or just
-matplotlib_chinese.plot_chinese()
-
-
-# example plot with Chinese characters
+```python
+# example 
 import numpy as np
 import matplotlib.pyplot as plt
 
-from matplotlib_cn import matplotlib_chinese
-matplotlib_chinese.plot_chinese()
+from matplotlib_cn import matplotlib_util
+matplotlib_util.enable_chinese()
 
 x = np.linspace(-10, 10, 100)
 y = x
@@ -48,3 +46,21 @@ plt.ylabel("纵轴（y）")
 plt.show()
 ```
 
+
+## Build & upload to pypi (For Developers)
+
+prerequirement: twine is installed. If not, run the following command to install it:
+
+```bash
+pip install -U twine
+```
+
+build and upload:
+
+```bash
+## package
+python setup.py sdist
+
+## upload
+twine upload dist/*
+```

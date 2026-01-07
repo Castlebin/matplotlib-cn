@@ -1,9 +1,10 @@
+import logging
 import os
 
 from matplotlib import rcParams, font_manager
 
 
-def enable_matplotlib_chinese(verbose=True):
+def enable_chinese(verbose=True):
     """
     Enable matplotlib to display Chinese characters and negative signs
     using SimHei.ttf in the same directory as this script.
@@ -11,7 +12,7 @@ def enable_matplotlib_chinese(verbose=True):
 
     def log(msg):
         if verbose:
-            print(f"[matplotlib_cn] {msg}")
+            logging.info(f"[dl_d2l] {msg}")
 
     # Locate SimHei.ttf in the same directory as this script
     font_path = os.path.join(os.path.dirname(__file__), "SimHei.ttf")
@@ -28,7 +29,3 @@ def enable_matplotlib_chinese(verbose=True):
     rcParams["axes.unicode_minus"] = False
 
     log(f"matplotlib enabled with Chinese font: {font_name} ")
-
-# alias
-plot_chinese = enable_matplotlib_chinese
-
